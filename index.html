@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>CV Embalagens</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+              <img src="image/logo.png" alt="">  
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#service">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <div class="p1">
+       
+          <div class="p1-box">
+              <div class="p1-item">
+                <h1>
+                    Um negócio que está sempre preocupado em oferecer o que há de melhor em cada  setor.
+                </h1>
+                <h3>
+                    Desde o atendimento até a entrega do produto final não é mesmo? A CV  Embalagens nasceu com propósito de profissionalizar o seu negócio através de suas embalagens. 
+                </h3>
+                <h3>                  
+                    Desenvolvemos embalagens personalizadas para que seus clientes lembrem de você,  dos seus produtos e da sua marca. 
+                </h3>
+              </div>
+              <div class="p1-item">
+                <img src="image/sacola.svg" alt="">
+              </div>
+          </div>
+      </div>
+
+      <div class="p2" id="service">
+        <h1>
+            Oferecemos embalagens funcionais e com ótima aparência estética. Na CV  embalagens a suas ideias são possívels, possuimos equipamentos e ferramentas que  nos proporcionam os mais variados tipos de embalagens. 
+          </h1>
+          <h2>
+            O que você encontra aqui:
+          </h2>
+          <div class="p2-box">
+              <div class="p2-item">
+                  <img src="image/check.svg" alt="">
+                  <h3>
+                    Sacos
+
+                  </h3>
+              </div>
+              <div class="p2-item">
+                <img src="image/check.svg" alt="">
+                <h3>
+                    Sacolas                     
+                </h3>
+            </div>
+            <div class="p2-item">
+                <img src="image/check.svg" alt="">
+                <h3>
+                    Embalagens variadas e personalizadas
+                </h3>
+            </div>
+            <div class="p2-item">
+                <img src="image/check.svg" alt="">
+                <h3>
+                    Filmes
+                </h3>
+            </div>
+            <div class="p2-item">
+                <img src="image/check.svg" alt="">
+                <h3>
+                    Bobinas 
+                </h3>
+            </div>
+            <div class="p2-item">
+                <img src="image/check.svg" alt="">
+                <h3>
+                    Envelopes                    
+                </h3>
+            </div>
+          </div>
+      </div>
+      <div class="p4" id="contact">
+          <h2>
+              Entre em Contato
+          </h2>
+        <div class="c-item">
+            <form method="POST" action="./email.php" class="decor">
+                <div class="input-fields">
+                    <input type="text" name="name" placeholder="Nome">
+                    <input type="email" name="email" placeholder="Email">
+                    <div class="msg">
+                        <textarea name="message" placeholder="Messagem"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </div>
+        </form>
+        </div>
+          <div class="p4-box">
+            <div class="p4-item">
+                <img src="image/logo.png" alt="">
+            </div>
+            <div class="p4-item">
+                <div class="p4-item-2">
+                    <img src="image/whatsapp.svg" alt="">
+                    <p>
+                        47 99633-0789 
+                    </p>
+                </div>
+                <div class="p4-item-2">
+                    <img src="image/instagram.svg" alt="">
+                    <p>
+                        cv_embalagens 
+                    </p>
+                </div>
+            </div>
+          </div>
+      </div>
+    </main>
+	<footer> 
+        <div class="f-i">
+            <p>
+                © Todos os direitos reservados
+            </p>
+            <p><a href="https://www.instagram.com/emanoelsalmeida/">Desenvolvido por Agência Humans</a></p>
+        </div>
+        <div class="f-i">
+
+        </div>
+    </footer>
+	<script type="text/javascript">
+
+        //menu toggle-button
+
+        $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        //scrolling effect
+
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+                $('nav').addClass('fixed');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+
+    </script>
+</body>
+
+</html>
